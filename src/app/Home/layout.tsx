@@ -5,7 +5,7 @@ import Navbar from '@/components/ui/Navbar'
 const Layout = ({children} : {children: React.ReactNode}) => {
   return (
     <>
-        <div className='flex h-screen w-full bg-mesh'>
+        <div className='flex h-screen w-full bg-mesh bg-cover'>
             <Navbar />
             <div >{children}</div>
         </div>

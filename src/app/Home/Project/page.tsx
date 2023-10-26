@@ -1,8 +1,7 @@
 import React from 'react'
 
-export const Project = () => {
+export default function Page() {
   return (
-    <div>Project</div>
+    <div>page</div>
   )
 }
-export default Project;
