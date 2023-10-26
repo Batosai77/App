@@ -8,8 +8,8 @@ import {
 
 const iconData = [
     {name:'home', path: '/Home', icon: <LuHome/>},
-    {name:'project', path: '/Home/Project', icon: <LuFolderArchive/>},
-    {name:'about', path: '/Home/About', icon: <LuUser/>},
+    {name:'project', path: '/Project', icon: <LuFolderArchive/>},
+    {name:'about', path: '/About', icon: <LuUser/>},
 ]
 
 
