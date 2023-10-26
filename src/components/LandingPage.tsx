@@ -22,7 +22,7 @@ const LandingPage = () => {
     return (
       <>
       <div className='flex flex-col h-screen w-full justify-center items-center'>
-        <div className='animate animated-textColor bg-gradient-to-l
+        <div className='animate-textColor bg-gradient-to-l
          from-green-500 via-emerald-500 to-teal-600 text-transparent bg-clip-text 
          text-5xl font-semibold '>
           WELCOME
