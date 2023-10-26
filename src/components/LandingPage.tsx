@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { hydrateRoot } from 'react-dom/client';
+import { LuArrowRight } from 'react-icons/lu';
 import { TypeAnimation } from 'react-type-animation';
 
 const LandingPage = () => {
@@ -28,8 +29,8 @@ const LandingPage = () => {
           WELCOME
         </div>
         <Link 
-        className= 'text-white'
-        href={'/Home'}> Get Started
+        className= 'flex items-center justify-between text-white bg-slate-500 mt-4 p-2 rounded-full animate-bounce bg-opacity-20'
+        href={'/Home'}> Get Started <LuArrowRight/>
         </Link>
       </div>
       </>
