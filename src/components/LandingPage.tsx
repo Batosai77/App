@@ -1,24 +1,9 @@
 'use client'
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { hydrateRoot } from 'react-dom/client';
 import { LuArrowRight } from 'react-icons/lu';
-import { TypeAnimation } from 'react-type-animation';
 
 const LandingPage = () => {
-    const [clock, setClock] = useState(new Date());
-
-    const refreshTime = () => {
-      setClock(new Date());
-    }
-
-    useEffect(() => {
-      const timerId = setInterval(refreshTime, 1000);
-      const cleanUp = () => {
-        clearInterval(timerId);
-      }
-      return cleanUp;
-    }, [clock])
 
     return (
       <>

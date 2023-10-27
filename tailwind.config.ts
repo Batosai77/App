@@ -5,13 +5,15 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       animation: {
         'textColor': 'text 5s ease infinite',
       },
       backgroundImage: {
-        'mesh': "url('/mesh.png')",
+        'light': "url('/light.png')",
+        'dark': "url('/dark.png')" 
       },
       keyframes: {
         text: {
