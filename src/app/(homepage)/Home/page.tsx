@@ -11,6 +11,7 @@ export default function Home() {
             "Agni Nur Ayeni Bocah Paling Lucu",1000,
             "Agni Nur Ayeni Bocah Paling Aneh",1000,
             "Agni Nur Ayeni Bocah Paling Nyebeli",1000,
+            "Agni Nur Ayeni Bocah Paling Terserahh",1000,
           ]}
           repeat={Infinity}
           />
