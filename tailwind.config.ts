@@ -12,8 +12,8 @@ module.exports = {
         'textColor': 'text 5s ease infinite',
       },
       backgroundImage: {
-        'light': "url('/light.png')",
-        'dark': "url('/dark.png')" 
+        'dark' : 'url(/dark.png)',
+        'light' : 'url(/light.png)'
       },
       keyframes: {
         text: {

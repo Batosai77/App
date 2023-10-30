@@ -17,7 +17,7 @@ const Clock = () => {
       return cleanUp;
     }, [clock])
   return (
-    <span suppressHydrationWarning ={true}>{clock.toLocaleTimeString()}</span>
+    <span className='flex items-center justify-center bg-slate-500 px-2 py-1 rounded-lg bg-opacity-20' suppressHydrationWarning ={true}>{clock.toLocaleTimeString()}</span>
   )
 }
 
