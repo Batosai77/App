@@ -7,13 +7,9 @@ import { Container, Engine } from "tsparticles-engine";
 
 
 const ParticleBackground = () => {
-    const particlesInit = useCallback(async (engine : Engine) => {
-        await loadFull(engine);
-    }, []);
+    const particlesInit = useCallback(async (engine : Engine) => {loadFull(engine)}, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await container;
-    }, []);
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {}, []);
 
     return (
         <Particles
