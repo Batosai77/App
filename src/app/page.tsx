@@ -5,8 +5,9 @@ import React from 'react'
 export default function Page (){
   return (
     <>
-      <LandingPage />
-      <ParticleBackground />
+        <LandingPage>
+          <ParticleBackground />
+        </LandingPage>
     </>
     )
   }
