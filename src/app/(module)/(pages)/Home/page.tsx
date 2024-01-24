@@ -9,7 +9,7 @@ export default function Home() {
       <PageAnimate>
         <div className='flex h-screen w-full bg-slate-500/20'>
           <div className=' flex m-10 text-5xl'>
-            <div>{`HI I'm Yogi`}</div>
+            <div>{`Hallo`}</div>
               <TypeAnimation
               sequence={[
                 "Transforming Indicator", 1000,
