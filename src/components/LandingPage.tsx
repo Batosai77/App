@@ -2,7 +2,6 @@
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
-import ParticleBackground from './ui/ParticlesBackground';
 
 const LandingPage = ({children} : {children : React.ReactNode}) => {
 
@@ -15,8 +14,23 @@ const LandingPage = ({children} : {children : React.ReactNode}) => {
             from-green-500 via-emerald-500 to-teal-600 text-transparent bg-clip-text 
             text-5xl font-semibold font-serif'>
               <TypeAnimation 
-              sequence={["WELCOME", 10000]}
-              speed={1}/>
+              preRenderFirstString={false}
+              sequence={[
+                "W", 100,
+                "WE", 100,
+                "WELC", 100,
+                "WELCO", 100,
+                "WELCOM", 100,
+                "WELCOME", 100,
+                "WELCOM", 100,
+                "WELCO", 100,
+                "WELC", 100,
+                "WE", 100,
+                "W", 100,
+                "", 100,
+              ]}
+              speed={1}
+              repeat={Infinity}/>
             </div>
             <Link 
             className= 'flex items-center justify-between text-white bg-slate-500 mt-4 p-2 rounded-full animate-bounce bg-opacity-20'

@@ -13,7 +13,9 @@ module.exports = {
       },
       backgroundImage: {
         'dark' : 'url(/dark.png)',
-        'light' : 'url(/light.png)'
+        'light' : 'url(/light.png)',
+        'dec-bunga' : 'url(/decBunga.png)',
+        'bg-mesh' : 'url(/bgMesh.png)'
       },
       keyframes: {
         text: {

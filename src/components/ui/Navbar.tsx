@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className='item-center justify-center px-2 rounded-sm bg-slate-500/20 font-serif' >{link.name}</div>
         </div>
         <div>{link.icon}</div>
-      </Link>
+      </Link> 
     )})
   return (
     <nav>
