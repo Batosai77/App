@@ -1,66 +1,53 @@
-
+'use client'
+import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import decBunga from 'public/decBunga.png';
-import bgMesh from'public/bgMesh.png';
+import bgMesh from'public/background.png';
 import Decoration from'public/bgDecoration.png';
+import Animate from 'public/animateOrg.png';
+
 
 const LandingPage = ({name, children} : {name: string, children:React.ReactNode}) => {
+  const guestName = name.replace(/-/g, ' ');
   return (
     <>
-      <div className="flex h-screen w-full static">
-        <div className="flex relative w-full justify-center">
-          <div className="flex absolute h-[100vh] w-full justify-center items-center">
-            <Image
-            alt="Decoration Image"
-            src={Decoration}
-            width={500}
-            height={500}
-            />
-          </div>
-          <div className="flex absolute h-[100vh] w-full justify-center items-center rotate-180">
-            <Image
-            alt="Decoration Image"
-            src={Decoration}
-            width={500}
-            height={500}
-            />
-          </div>
-          <div className="flex absolute h-[100vh] w-full justify-center items-center">
-            <Image
-            alt="Background Landing Page"
-            src={bgMesh}
-            width={500}
-            height={500}
-            />
-          </div>
-          <div className="flex absolute md:inset-x-0 md:items-center md:justify-center">
-            <Image
-              alt="Gambar Bunga"
-              src={decBunga}
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="flex absolute md:inset-x-0 md:items-end md:justify-center rotate-180">
-            <Image
-              alt="Gambar Bunga"
-              src={decBunga}
-              width={500}
-              height={500}
-            />
-          </div>
-        </div>
-        <div className="flex flex-col absolute justify-center inset-0 m-10">
-          <div className="flex flex-col justify-center items-center gap-2">
-            <p className="text-center">The Wedding Of</p>
-            <p className="text-center font-bold font-serif text-5xl">Yoga & Putri</p>
-            <p className="text-center">Dear</p>
-            <p className="text-center font-semibold font-serif text-2xl">{name}</p>
-          </div>
-        </div>
-        <div className="flex absolute w-full justify-center bottom-1/4">
-          {children}
-        </div>
+      <div className="bg-fixed"
+            style={{
+            backgroundImage:`url(${bgMesh.src})`,
+            width:'100vw',
+            height:'100vh',
+            display:'flex',
+            backgroundPosition:'center',
+            backgroundSize:'cover',
+            }}>
+              <div className="flex w-full h-screen">
+                <div className="w-full justify-center mt-[20%] md:mt-[2%]">
+                  <motion.div className="font-semibold font-dancing text-center text-2xl md:text-5xl"
+                              transition={{ type: "spring", stiffness: 100 }}>Weding Invitation
+                  </motion.div>
+                </div>
+                <div className="flex absolute w-full h-[40%] md:h-[50%] justify-center top-32 md:top-20">
+                  <div className="flex relative w-[60%] md:w-[30%]">
+                    <Image
+                      alt="Animasi Orang"
+                      src={Animate}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      fill
+                      />
+                  </div>
+                </div>
+                <div className="flex flex-col absolute w-full bottom-[12%] items-center">
+                  <div className="flex relative mb-3 font-dancing text-3xl font-semibold">Yoga & Putri</div>
+                  <div className="flex relative font-mono mb-3 ">Kpd Bpk/Ibu/Saudara/i</div>
+                  <div className="flex relative font-dancing text-3xl font-semibold mb-3">{guestName}</div>
+                  <div className="flex relative font-mono mb-3 text-center text-sm">Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.</div>
+                </div>
+                <div className="flex absolute bottom-[6%] md:bottom-8 items-center justify-center w-full h-max animate animate-bounce">
+                  {children}
+                </div>
+                <div className="flex absolute w-full bottom-[1%] justify-center text-center text-sm">* Mohon maaf apabila ada kesalahan penulisan nama/gelar</div>
+              </div>
       </div>
     </>
   );

@@ -1,0 +1,196 @@
+1.add view data user pelatihan
+2.fix image size FE
+3.edit input quisioner json to text
+{
+    "title": "Soal Ujian",
+    "logoPosition": "right",
+    "showProgressBar": "top",
+    "showTimerPanel": "bottom",
+    "maxTimeToFinishPage": 300,
+    "completedHtmlOnCondition":
+    [
+        {
+            "expression": "{totalScore} >= 80",
+            "html": "Nilai anda {totalScore} dari {maxScore}.</br></br>Selamat anda berhasil lulus!"
+        },
+        {
+            "expression": "{totalScore} < 80",
+            "html": "Nilai anda {totalScore} dari {maxScore}.</br></br>Maaf anda belum berhasil lulus"
+        }
+    ],
+    "pages":
+    [
+        {
+            "name": "startPage",
+            "elements":
+            [
+                {
+                    "type": "html",
+                    "name": "welcomeMsg",
+                    "html": "<b>Kerjakan soal assesement berikut dengan jujur & sungguh-sungguh.</b></br>Batas waktu mengerjakan soal adalah 5 menit, dimulai saat menekan tombol `Start` di bawah ini</br><i></i></br>"
+                }
+            ]
+        },
+        {
+            "elements":
+            [
+                {
+                    "type": "radiogroup",
+                    "name": "q1",
+                    "score": 20,
+                    "title": "Pemakaian benur tokolan/pendederan bisa mempercepat proses budidaya, dengan penebaran tokolan, petambak tradisional bisa memanen udang pada kisaran umur :",
+                    "correctAnswer": "a",
+                    "choices":
+                    [
+                        {
+                            "value": "a",
+                            "text": "40-50 hari, dengan size 80 -100 ekor/kg"
+                        },
+                        {
+                            "value": "b",
+                            "text": "40-50 hari, dengan size 100 - 1200 ekor/kg"
+                        },
+                        {
+                            "value": "c",
+                            "text": "30 – 40 hari, dengan size 80 – 100 ekor/kg"
+                        },
+                        {
+                            "value": "d",
+                            "text": "30 – 40 hari, dengan size 100 – 1200 ekor/kg"
+                        }
+                    ],
+                    "isRequired": true
+                }
+            ]
+        },
+        {
+            "elements":
+            [
+                {
+                    "type": "radiogroup",
+                    "name": "q2",
+                    "score": 20,
+                    "title": "Tujuan proses pendederan benur antara lain :",
+                    "correctAnswer": "d",
+                    "choices":
+                    [
+                        {
+                            "value": "a",
+                            "text": "Mempercepat siklus budidaya"
+                        },
+                        {
+                            "value": "b",
+                            "text": "Memperkecil resiko serangan penyakit"
+                        },
+                        {
+                            "value": "c",
+                            "text": "Membantu proses adaptasi"
+                        },
+                        {
+                            "value": "d",
+                            "text": "Semua Jawaban Benar"
+                        }
+                    ],
+                    "isRequired": true
+                }
+            ]
+        },
+        {
+            "elements":
+            [
+                {
+                    "type": "radiogroup",
+                    "name": "q3",
+                    "score": 20,
+                    "title": "Urutan Langkah dalam persiapan lahan pemeliharaan udang Vaname adalah :",
+                    "correctAnswer": "b",
+                    "choices":
+                    [
+                        {
+                            "value": "a",
+                            "text": "Pemberian kapur, pengeringan lahan, pemberantasan hama, pemasukan air, pemberian probiotik"
+                        },
+                        {
+                            "value": "b",
+                            "text": "Pengeringan lahan, pemberian kapur, pemberantasan hama, pemasukan air, pemberian probiotik"
+                        },
+                        {
+                            "value": "c",
+                            "text": "Pengeringan lahan, pemberantasan hama, pemasukan air, pemberian kapur, pemberian probiotik"
+                        },
+                        {
+                            "value": "d",
+                            "text": "Pemberian probiotik, pengeringan lahan, pemberantasan hama, pemasukan air, pemberian kapur"
+                        }
+                    ],
+                    "isRequired": true
+                }
+            ]
+        },
+        {
+            "elements":
+            [
+                {
+                    "type": "radiogroup",
+                    "name": "q4",
+                    "score": 20,
+                    "title": "Benih udang ditebar setelah ……..hari pemasukan air.",
+                    "correctAnswer": "c",
+                    "choices":
+                    [
+                        {
+                            "value": "a",
+                            "text": "8 – 10 hari"
+                        },
+                        {
+                            "value": "b",
+                            "text": "12 – 14 hari"
+                        },
+                        {
+                            "value": "c",
+                            "text": "3 – 5 hari"
+                        },
+                        {
+                            "value": "d",
+                            "text": "7 – 8 hari"
+                        }
+                    ],
+                    "isRequired": true
+                }
+            ]
+        },
+        {
+            "elements":
+            [
+                {
+                    "type": "radiogroup",
+                    "name": "q5",
+                    "score": 20,
+                    "title": "Salah satu faktor utama yang menjadi masalah dalam pendederan benur adalah …………… terutama pada musim pancaroba",
+                    "correctAnswer": "d",
+                    "choices":
+                    [
+                        {
+                            "value": "a",
+                            "text": "Salinitas"
+                        },
+                        {
+                            "value": "b",
+                            "text": "pH"
+                        },
+                        {
+                            "value": "c",
+                            "text": "Oksigen"
+                        },
+                        {
+                            "value": "d",
+                            "text": "Suhu"
+                        }
+                    ],
+                    "isRequired": true
+                }
+            ]
+        }
+    ],
+    "firstPageIsStarted": true
+}

@@ -1,7 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Dancing_Script, Inter } from 'next/font/google'
 import './globals.css'
 
+const DancingScript = Dancing_Script({
+  weight:'500',
+  subsets:['latin'],
+  variable:'--font-dancing-script'
+});
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html className='scroll-smooth' lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${DancingScript.variable}`}>
           <main className='h-screen w-full'>{children}</main>
       </body>
     </html>

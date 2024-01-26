@@ -8,12 +8,15 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily:{
+        dancing:['var(--font-dancing-script)']
+      },
       animation: {
         'textColor': 'text 5s ease infinite',
       },
       backgroundImage: {
         'dark' : 'url(/dark.png)',
-        'light' : 'url(/light.png)',
+        'light' : 'url(/background.png)',
         'dec-bunga' : 'url(/decBunga.png)',
         'bg-mesh' : 'url(/bgMesh.png)'
       },

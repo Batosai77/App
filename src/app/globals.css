@@ -2,3 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.goyang-1 img {
+	animation-name: goyang1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.goyang-2 img {
+	animation-name: goyang1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.goyang-3 img {
+	animation-name: goyang1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.goyang-4 img {
+	animation-name: goyang4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.zoom-1 {
+	transform: scale(1);
+	animation: zoom 3s infinite;
+}
+
+.zoom-2 img {
+	transform: scale(1);
+	animation: zoom 2s infinite;
+}
+
+.naik-turun {
+	animation-name: naikturun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.naik-turun-goyang {
+	animation-name: naikturungoyang;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes goyang1{
+    0%{ transform: rotate(0deg) scale(1); }
+    50%{ transform: rotate(6deg) scale(1.18); }
+    100%{ transform: rotate(0deg) scale(1); }
+}
+
+@keyframes goyang2{
+    0%{ transform: rotate(0deg) scale(1); }
+    25%{ transform: rotate(-4deg) scale(1.05); }
+    50%{ transform: rotate(-8deg) scale(1.1); }
+    75%{ transform: rotate(-4deg) scale(1.05); }
+    100%{ transform: rotate(0deg) scale(1); }
+}
+
+@keyframes goyang3{
+    0%{ transform: rotate(0deg) scale(1); }
+    25%{ transform: rotate(-4deg) scale(1.1); }
+    50%{ transform: rotate(0deg) scale(1); }
+    75%{ transform: rotate(4deg) scale(1.1); }
+    100%{ transform: rotate(0deg) scale(1); }
+}
+
+@keyframes goyang4{
+    0%{ transform: rotate(0deg); }
+    25%{ transform: rotate(-4deg); }
+    75%{ transform: rotate(4deg); }
+    100%{ transform: rotate(0deg); }
+}
+
+@keyframes zoom {
+	0% { transform: scale(0.95); }
+	60% { transform: scale(1); }
+	100% { transform: scale(0.95); }
+}
+
+@keyframes naikturun {
+	0% { transform: translate(0px,0px); }
+	50% { transform: translate(0px,-10px); }
+	100% { transform: translate(0px,0px); }
+}
+
+@keyframes naikturungoyang {
+	0% { transform: scale(1.1); }
+	25%{ transform: scale(1.15) translate(0px,-10px); }
+	75%{ transform: scale(1.1)translate(0px,5px); }
+	100% { transform: scale(1.1); }
+}
+
+@keyframes putarkanankiri {
+	0% { transform: scale(1.1); }
+	25%{ transform: scale(1.15) translate(0px,-10px); }
+	75%{ transform: scale(1.1)translate(0px,5px); }
+	100% { transform: scale(1.1); }
+}/* End custom CSS */

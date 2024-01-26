@@ -18,7 +18,7 @@ const ButtonOpenPage = () => {
         <Link onClick={handleClick}
         className="hover:bg-slate-400 hover:bg-opacity-40 rounded-full"
         href={'#'}>
-          <div className={`flex h-max w-max rounded-xl justify-between items-center p-1 ${isIconToggled ? 'bg-slate-300' : ''}`}>
+          <div className={`flex h-max w-max rounded-xl justify-between items-center p-1 ${isIconToggled ? 'bg-rose-300' : 'bg-rose-300 bg-opacity-40'}`}>
               {isIconToggled ? (
               <EnvelopeOpenIcon className="h-8" />
               ) : (
