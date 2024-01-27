@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .goyang-1 img {
 	animation-name: goyang1;
     animation-duration: 7s;

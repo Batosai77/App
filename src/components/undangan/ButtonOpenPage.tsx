@@ -12,12 +12,14 @@ const ButtonOpenPage = () => {
   const handleClick = () => {
     setIsIconToggled((prevState) => !prevState);
   };
+  const pathName = usePathname();
+  console.log(pathName);
 
   return (
     <>
         <Link onClick={handleClick}
         className="hover:bg-slate-400 hover:bg-opacity-40 rounded-full"
-        href={'#'}>
+        href={`${pathName}/detail`}>
           <div className={`flex h-max w-max rounded-xl justify-between items-center p-1 ${isIconToggled ? 'bg-rose-300' : 'bg-rose-300 bg-opacity-40'}`}>
               {isIconToggled ? (
               <EnvelopeOpenIcon className="h-8" />

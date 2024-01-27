@@ -6,7 +6,7 @@ const Page = ({params} : {params: {name: string}}) => {
   return (
     <>
         <LandingPage name={params.name}>
-          <ButtonOpenPage/>
+          yuhuuu
         </LandingPage>
     </>
   );
