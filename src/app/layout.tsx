@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className='scroll-smooth' lang="en">
+    <html lang="en">
       <body className={`${inter.className} ${DancingScript.variable}`}>
           <main className='h-screen w-full'>{children}</main>
       </body>
