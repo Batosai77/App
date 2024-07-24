@@ -1,7 +1,8 @@
 'use client'
 
-import { LoginRequest, LoginSchema } from "@/type/Login";
+import { LoginRequest, LoginSchema } from "@/types/Login";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { signIn } from "next-auth/react";
 import { useForm } from "react-hook-form"
 
 const Page = () => {
@@ -9,12 +10,25 @@ const Page = () => {
     resolver: zodResolver(LoginSchema)
   })
 
-  const onSubmit = handleSubmit(() => {
-    alert("test")
+  const onSubmit = handleSubmit(async (values) => {
+    try {
+      const response = await signIn("credentials", {
+        redirect: false,
+        email: values.email,
+        password: values.password,
+      })
+      if(response?.error) {
+        console.log(response)
+      }else {
+        console.log(response)
+      }
+    } catch (error) {
+      console.error(error)
+    }
   })
   return (
     <div className="flex h-screen w-full items-center justify-center">
-      <form onSubmit={onSubmit} action="#" method="post">
+      <form onSubmit={onSubmit} method="post">
         <div className="card bg-primary text-primary-content w-96 h-96 glass">
           <div className="card-body justify-center">
             <label className="input input-bordered flex items-center gap-2">
