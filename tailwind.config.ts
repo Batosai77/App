@@ -10,15 +10,16 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#87cfea",
-          "secondary": "#00bfff",
+          "primary": "#3F6B88",
+          "secondary": "#153F55",
           "accent": "#1e90ff",
           "neutral": "#191418",
-          "base-100": "#e0ffff",
+          "base-100": "#D7E7F7",
           "info": "#00e7ff",
           "success": "#00c86c",
           "warning": "#ffc800",
           "error": "#ff0040",
+          "white": "#D7E7F7"
         },
       }, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     ],
